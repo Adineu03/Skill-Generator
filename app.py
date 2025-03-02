@@ -50,7 +50,7 @@ Provide your answer in a structured, detailed, and professional manner.
                 {"role": "system", "content": "You are an expert job skills generator."},
                 {"role": "user", "content": prompt}
             ],
-            temperature=0.7,
+            temperature=0.1,
             max_tokens=1000
         )
         generated_skills = response.choices[0].message.content.strip()
